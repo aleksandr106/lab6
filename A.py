@@ -32,3 +32,5 @@ for i in range(b):
         if a[i]==a[j]:
             c=a[i]
 print(c,file=output)
+input.close()
+output.close()

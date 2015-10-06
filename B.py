@@ -42,3 +42,25 @@
 | 50 5 5 5 |       |
 +----------+-------+
 '''
+input=open('input.txt','r')
+output=open('output.txt','w')
+b=''
+b=input.readline()
+b=b.rstrip()
+b=int(b)
+a=['']*b
+c=0
+s=input.readline()
+s=s.rstrip()
+j=0
+for i in range(len(s)):
+    if s[i]!=' ':
+        a[j]+=s[i]
+    else:
+        j+=1
+for i in range(b):
+    if int(a[i])==5:
+        c-=1
+    else:
+        c+=(int(a[i])-5)//5
+print(c)

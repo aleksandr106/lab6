@@ -63,6 +63,9 @@ for i in range(b):
         c-=1
     else:
         c+=(int(a[i])-5)//5
-print(c, file=output)
+if c>0:
+    print(c, file=output)
+else:
+    print('0',file=output)
 input.close()
 output.close()

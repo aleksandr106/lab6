@@ -19,18 +19,29 @@
 input=open('input.txt','r')
 output=open('output.txt','w')
 b=''
-b=int(b.readline())
-a=[]
+b=input.readline()
+b=b.rstrip()
+b=int(b)
+a=['']*b
 c=0
-for line in output:
-    a.append(line)
-for i in range(b):
-    a[i]=int(a[i])
+s=input.readline()
+s=s.rstrip()
+j=0
+for i in range(len(s)):
+    if s[i]!=' ':
+        a[j]+=s[i]
+    else:
+        j+=1
 for i in range(b):
     j=i+1
     while j<b:
         if a[i]==a[j]:
-            c=a[i]
-print(c,file=output)
+            c=int(a[i])
+            break
+        j+=1
+    if c>0:
+        break
+print(c, file=output)
 input.close()
 output.close()
+

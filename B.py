@@ -63,4 +63,4 @@ for i in range(b):
         c-=1
     else:
         c+=(int(a[i])-5)//5
-print(c)
+print(c, file=output)

@@ -57,14 +57,16 @@ for i in range(len(s)):
     if s[i]!=' ':
         a[j]+=s[i]
     else:
+        a[j]=int(a[j])
         j+=1
+a[b-1]=int(a[b-1])
 for i in range(b):
-    if int(a[i])==5:
+    if a[i]==5:
         c-=1
     else:
-        c+=(int(a[i])-5)//5
-if max(a)==a(1):
-    c=(int(a[1])-5)//5
+        c+=((a[i])-5)//5
+if max(a)==a[0]:
+    c=(int(a[0])-5)//5
 if c>0:
     print(c, file=output)
 else:

@@ -22,16 +22,9 @@ b=''
 b=input.readline()
 b=b.rstrip()
 b=int(b)
-a=['']*b
-c=0
 s=input.readline()
-s=s.rstrip()
-j=0
-for i in range(len(s)):
-    if s[i]!=' ':
-        a[j]+=s[i]
-    else:
-        j+=1
+a=s.split()
+c=0
 for i in range(b):
     j=i+1
     while j<b:
@@ -40,8 +33,9 @@ for i in range(b):
             break
         j+=1
     if c>0:
-        break
+        break   
 print(c, file=output)
 input.close()
 output.close()
+
 

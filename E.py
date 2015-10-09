@@ -49,8 +49,8 @@ a=[]*man
 for i in range (dolg):
     s=input.readline()
     a=s.split()
-    k[int(a[0])-1]+=int(a[2])
-    k[int(a[1])-1]-=int(a[2])
+    k[int(a[0])-1]-=int(a[2])
+    k[int(a[1])-1]+=int(a[2])
 print(' '.join(map(str, k)), file=output)
 input.close()
 output.close()

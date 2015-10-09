@@ -63,10 +63,10 @@ for i in range(b):
         c-=1
     else:
         c+=(int(a[i])-5)//5
-if c>0:
-    print(c, file=output)
 if max(a)==a(1):
     c=(int(a[1])-5)//5
+if c>0:
+    print(c, file=output)
 else:
     print('0',file=output)
 input.close()

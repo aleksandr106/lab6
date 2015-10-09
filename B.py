@@ -51,23 +51,20 @@ b=int(b)
 a=['']*b
 c=0
 s=input.readline()
-s=s.rstrip()
+a=s.split()
 j=0
-for i in range(len(s)):
-    if s[i]!=' ':
-        a[j]+=s[i]
-    else:
-        a[j]=int(a[j])
-        j+=1
-a[b-1]=int(a[b-1])
+k=0
 for i in range(b):
-    if a[i]==5:
+    if int(a[i])==5:
         c-=1
     else:
-        c+=((a[i])-5)//5
+        c+=(int(a[i])-5)//5
+    if k<c:
+        k=c
 if c>0:
-    print(c, file=output)
+    print(k, file=output)
 else:
     print('0',file=output)
 input.close()
 output.close()
+

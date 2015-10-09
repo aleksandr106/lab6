@@ -25,3 +25,26 @@
   | -40 41 -42 -41 42 40 |       |
   +----------------------+-------+
 '''
+input=open('input.txt','r')
+output=open('output.txt','w')
+b=''
+b=input.readline()
+b=b.rstrip()
+b=int(b)
+s=input.readline()
+a=s.split()
+c=b+1
+print(' '.join(a))
+mini=b+1
+for i in range (b):
+    for j in range(i+1,b):
+        if int(a[i])**2==int(a[j])**2 and int(a[i])<0 and int(a[j])>0:
+            c=j-i
+        if c<mini:
+            mini=c
+    print(mini)
+if mini==b+1:
+    print('0',file=output)
+else:
+    print(mini, file=output)
+

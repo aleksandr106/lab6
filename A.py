@@ -26,7 +26,7 @@ s=input.readline()
 a=s.split()
 c=0
 for i in range(b):
-   for i in range(j+1,b)
+   for i in range(j+1,b):
         if a[i]==a[j]:
             c=int(a[i])
             break

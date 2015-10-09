@@ -26,16 +26,16 @@ s=input.readline()
 a=s.split()
 c=0
 for i in range(b):
-    j=i+1
-    while j<b:
+   for i in range(j+1,b)
         if a[i]==a[j]:
             c=int(a[i])
             break
-        j+=1
     if c>0:
-        break   
+       break   
 print(c, file=output)
 input.close()
 output.close()
+
+
 
 

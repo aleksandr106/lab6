@@ -30,8 +30,6 @@ for i in range(b):
         if a[i]==a[j]:
             c=int(a[i])
             break
-   if c>0:
-      break   
 print(c, file=output)
 input.close()
 output.close()

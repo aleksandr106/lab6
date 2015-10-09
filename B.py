@@ -61,7 +61,7 @@ for i in range(b):
         c+=(int(a[i])-5)//5
     if k<c:
         k=c
-if c>0:
+if c>0 or k+c>=0:
     print(k, file=output)
 else:
     print('0',file=output)

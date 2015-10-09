@@ -25,3 +25,23 @@
 | 6 4 6 3 |           |
 +---------+-----------+
 '''
+input=open('input.txt','r')
+output=open('output.txt','w')
+s=input.readline()
+b=s.split()
+strok=int(b[0])
+stolb=int(b[1])
+c=1000
+a=[[]*strok for i in range (stolb)]
+for i in range (strok):
+    s=input.readline()
+    a[i]=s.split()
+for i in range (stolb):
+    c=1000
+    for j in range(strok):
+        if int(a[j][i])<c:
+           c=int(a[j][i])
+    print(c,end=' ',file= output)
+input.close()
+output.close()
+

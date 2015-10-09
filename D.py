@@ -31,8 +31,7 @@ s=input.readline()
 b=s.split()
 strok=int(b[0])
 stolb=int(b[1])
-c=1000
-a=[[]*strok for i in range (stolb)]
+a=[[]*stolb for i in range (strok)]
 for i in range (strok):
     s=input.readline()
     a[i]=s.split()
@@ -44,4 +43,5 @@ for i in range (stolb):
     print(c,end=' ',file= output)
 input.close()
 output.close()
+
 

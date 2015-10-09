@@ -18,7 +18,6 @@
 '''
 input=open('input.txt','r')
 output=open('output.txt','w')
-b=''
 b=input.readline()
 b=b.rstrip()
 b=int(b)
